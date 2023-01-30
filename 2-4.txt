@@ -1,0 +1,24 @@
+# 2.) 2. Write a R program to combine three arrays so that
+num1 = rbind(rep("A",3), rep("B",3), rep("C",3))
+print("num1")
+print(num1)
+num2 = rbind(rep("P",3), rep("Q",3), rep("R",3))
+print("num2")
+print(num2)
+num3 = rbind(rep("X",3), rep("Y",3), rep("Z",3))
+print("num3")
+print(num3)
+a = matrix(t(cbind(num1,num2,num3)),ncol=3, byrow=T)
+print("Combine three arrays, taking one row from each one by one:")
+print(a)
+
+
+# 3.) R program to create an array
+array1 =  array(1:30, dim=c(3,5,2))
+print(array1)
+
+# 4.) R program to create two dimnesional 5*3
+a <- array(seq(from = 50, length.out = 15, by = 2), c(5, 3))
+print("Content of the array:")
+print("5×3 array of sequence of even integers greater than 50:")
+print(a)
